@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ReliableML-AutoML"
+version = "0.1.0"
+description = "Optional model selection and ATTP partitioning for ReliableML."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "ReliableML>=0.1.1,<0.2",
+    "i-attp==0.2.3",
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.3",
+    "scipy>=1.11",
+    "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
